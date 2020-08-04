@@ -1,4 +1,25 @@
 *{
     font-family: 'Poppins', sans-serif;
+
 }
 
+#total-orders .card-header{
+    background-color: #0f4c75;
+    font-weight: bold;
+}
+
+#total-orders .card-body, #orders-delivered .card-body, #orders-pending .card-body{
+    color: black;
+}
+
+#titulos{
+    font-weight: bold;
+}
+
+#orders-delivered .card-header{
+    background-color: #206a5d;
+}
+
+#orders-pending .card-header{
+    background-color: #206a5d;
+}
