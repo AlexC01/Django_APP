@@ -5,7 +5,7 @@
 
 <div class="row">
     <div class="col-md">
-        <div class="card bard-body">
+        <div class="card bard-body p-3">
             <h5>Customer: </h5>  
             <hr>
             <a href="" class="btn btn-outline-info btn-sm btn-block">Update Customer</a>
@@ -37,6 +37,8 @@
     <div class="col">
         <div class="card card-body">
             <form method="get">
+                    {{myFilter.form}}
+
                 <button class="btn btn-primary" type="submit">Search</button>
             </form>
         </div>
@@ -50,7 +52,7 @@
             <table class="table table-sm">
                 <tr>
                     <th>Product</th>
-                    <th>Category</th>
+                    <th>Note</th>
                     <th>Date Ordered</th>
                     <th>Status</th>
                     <th>Update</th>
@@ -61,7 +63,7 @@
 
                     <tr>
                         <td>{{order.product}}</td>
-                        <td>{{order.product.category}}</td>
+                        <td>{{order.note}}</td>
                         <td>{{order.date_created}}</td>
                         <td>{{order.status}}</td>
                         <td><a href="{% url 'update_order' order.id %}" class="btn btn-sm btn-info">Update</a></td>
